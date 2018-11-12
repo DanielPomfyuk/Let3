@@ -1,0 +1,6 @@
+<%= form_for @product, url: new_product_path do |f| %>
+  <%= f.text_field :title %><br />
+  <%= f.text_field :price %><br />
+  <%= f.text_area :description , size: "60x12" %><br />
+  <%= f.submit "Create" %>
+<% end %>
